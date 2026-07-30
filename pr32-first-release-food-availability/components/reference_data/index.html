@@ -83,6 +83,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#exec-4--ceds-2025" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -607,6 +612,24 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reference data
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -623,6 +646,89 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#exec-4--ceds-2025" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CEDS-2025
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exec-4--ceds-2025-covidaveraged" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CEDS-2025-COVIDaveraged
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exec-4--ceds-2025-extrapol25" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CEDS-2025-extrapol25
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exec-4--iea-esdb-20250610" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IEA-ESDB-20250610
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exec-4--iea-esdb-20250610-covidaveraged" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IEA-ESDB-20250610-COVIDaveraged
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exec-4--iea-esdb-20250610-extrapol25" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IEA-ESDB-20250610-extrapol25
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1022,106 +1128,815 @@
 <p>The reference data is used to define some of the <a href="../thresholds/">criteria thresholds</a>.
 The identifiers in the reference data column of the thresholds correspond to
 the dataset identifiers listed below.</p>
-<p>````````python showcode="false"
-Traceback (most recent call last):
-  File "/home/runner/.cache/pypoetry/virtualenvs/scenario-evaluation-criteria-0NOCqcfx-py3.12/lib/python3.12/site-packages/pybtex/database/<strong>init</strong>.py", line 526, in _find_field
-    return self.fields[name]
-           ~~~~~~~~~~~^^^^^^
-  File "/home/runner/.cache/pypoetry/virtualenvs/scenario-evaluation-criteria-0NOCqcfx-py3.12/lib/python3.12/site-packages/pybtex/utils.py", line 160, in <strong>getitem</strong>
-    return self._dict[key.lower()]
-           ~~~~~~~~~~^^^^^^^^^^^^^
-KeyError: 'institution'</p>
-<p>During handling of the above exception, another exception occurred:</p>
-<p>Traceback (most recent call last):
-  File "/home/runner/.cache/pypoetry/virtualenvs/scenario-evaluation-criteria-0NOCqcfx-py3.12/lib/python3.12/site-packages/pybtex/database/<strong>init</strong>.py", line 529, in _find_field
-    return self._find_person_field(name)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/.cache/pypoetry/virtualenvs/scenario-evaluation-criteria-0NOCqcfx-py3.12/lib/python3.12/site-packages/pybtex/database/<strong>init</strong>.py", line 501, in _find_person_field
-    persons = self.persons[role]
-              ~~~~~~~~~~~~^^^^^^
-  File "/home/runner/.cache/pypoetry/virtualenvs/scenario-evaluation-criteria-0NOCqcfx-py3.12/lib/python3.12/site-packages/pybtex/utils.py", line 160, in <strong>getitem</strong>
-    return self._dict[key.lower()]
-           ~~~~~~~~~~^^^^^^^^^^^^^
-KeyError: 'institution'</p>
-<p>During handling of the above exception, another exception occurred:</p>
-<p>Traceback (most recent call last):
-  File "/home/runner/.cache/pypoetry/virtualenvs/scenario-evaluation-criteria-0NOCqcfx-py3.12/lib/python3.12/site-packages/pybtex/style/template.py", line 259, in field
-    field = entry._find_field(name, bib_data=context.get('bib_data'))
-            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/.cache/pypoetry/virtualenvs/scenario-evaluation-criteria-0NOCqcfx-py3.12/lib/python3.12/site-packages/pybtex/database/<strong>init</strong>.py", line 531, in _find_field
-    return self._find_crossref_field(name, bib_data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/.cache/pypoetry/virtualenvs/scenario-evaluation-criteria-0NOCqcfx-py3.12/lib/python3.12/site-packages/pybtex/database/<strong>init</strong>.py", line 506, in _find_crossref_field
-    raise KeyError(name)
-KeyError: 'institution'</p>
-<p>During handling of the above exception, another exception occurred:</p>
-<p>Traceback (most recent call last):
-  File "/home/runner/work/scenario-evaluation-criteria/scenario-evaluation-criteria/python/scenario_evaluation_criteria/formatting.py", line 116, in format_sources
-    bib = next(pyb_style.format_entries([entry])).text.render(
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/.cache/pypoetry/virtualenvs/scenario-evaluation-criteria-0NOCqcfx-py3.12/lib/python3.12/site-packages/pybtex/style/formatting/<strong>init</strong>.py", line 58, in format_entries
-    yield self.format_entry(label, entry, bib_data=bib_data)
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/.cache/pypoetry/virtualenvs/scenario-evaluation-criteria-0NOCqcfx-py3.12/lib/python3.12/site-packages/pybtex/style/formatting/<strong>init</strong>.py", line 72, in format_entry
-    text = get_template(entry).format_data(context)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/.cache/pypoetry/virtualenvs/scenario-evaluation-criteria-0NOCqcfx-py3.12/lib/python3.12/site-packages/pybtex/style/template.py", line 128, in format_data
-    return self.f(self.children, data, <em>self.args, </em><em>self.kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/.cache/pypoetry/virtualenvs/scenario-evaluation-criteria-0NOCqcfx-py3.12/lib/python3.12/site-packages/pybtex/style/formatting/<strong>init</strong>.py", line 32, in toplevel
-    return join(sep=Symbol('newblock')) [children].format_data(data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/.cache/pypoetry/virtualenvs/scenario-evaluation-criteria-0NOCqcfx-py3.12/lib/python3.12/site-packages/pybtex/style/template.py", line 128, in format_data
-    return self.f(self.children, data, </em>self.args, <strong>self.kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/.cache/pypoetry/virtualenvs/scenario-evaluation-criteria-0NOCqcfx-py3.12/lib/python3.12/site-packages/pybtex/style/template.py", line 174, in join
-    parts = [part for part in <em>format_list(children, data) if part]
-                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/.cache/pypoetry/virtualenvs/scenario-evaluation-criteria-0NOCqcfx-py3.12/lib/python3.12/site-packages/pybtex/style/template.py", line 148, in <genexpr>
-    return (_format_data(part, data) for part in list</em>)
-            ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/.cache/pypoetry/virtualenvs/scenario-evaluation-criteria-0NOCqcfx-py3.12/lib/python3.12/site-packages/pybtex/style/template.py", line 144, in _format_data
-    return f(data)
-           ^^^^^^^
-  File "/home/runner/.cache/pypoetry/virtualenvs/scenario-evaluation-criteria-0NOCqcfx-py3.12/lib/python3.12/site-packages/pybtex/style/template.py", line 128, in format_data
-    return self.f(self.children, data, *self.args, </strong>self.kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/.cache/pypoetry/virtualenvs/scenario-evaluation-criteria-0NOCqcfx-py3.12/lib/python3.12/site-packages/pybtex/style/template.py", line 235, in sentence
-    text = join(sep) [children].format_data(data)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/.cache/pypoetry/virtualenvs/scenario-evaluation-criteria-0NOCqcfx-py3.12/lib/python3.12/site-packages/pybtex/style/template.py", line 128, in format_data
-    return self.f(self.children, data, <em>self.args, </em><em>self.kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/.cache/pypoetry/virtualenvs/scenario-evaluation-criteria-0NOCqcfx-py3.12/lib/python3.12/site-packages/pybtex/style/template.py", line 174, in join
-    parts = [part for part in <em>format_list(children, data) if part]
-                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/.cache/pypoetry/virtualenvs/scenario-evaluation-criteria-0NOCqcfx-py3.12/lib/python3.12/site-packages/pybtex/style/template.py", line 148, in <genexpr>
-    return (_format_data(part, data) for part in list</em>)
-            ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/.cache/pypoetry/virtualenvs/scenario-evaluation-criteria-0NOCqcfx-py3.12/lib/python3.12/site-packages/pybtex/style/template.py", line 144, in _format_data
-    return f(data)
-           ^^^^^^^
-  File "/home/runner/.cache/pypoetry/virtualenvs/scenario-evaluation-criteria-0NOCqcfx-py3.12/lib/python3.12/site-packages/pybtex/style/template.py", line 128, in format_data
-    return self.f(self.children, data, </em>self.args, **self.kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/.cache/pypoetry/virtualenvs/scenario-evaluation-criteria-0NOCqcfx-py3.12/lib/python3.12/site-packages/pybtex/style/template.py", line 263, in field
-    raise FieldIsMissing(name, entry)
-pybtex.style.template.FieldIsMissing: missing institution in UNEP-FWIR-2021</p>
-<p>During handling of the above exception, another exception occurred:</p>
-<p>Traceback (most recent call last):
-  File "/home/runner/.cache/pypoetry/virtualenvs/scenario-evaluation-criteria-0NOCqcfx-py3.12/lib/python3.12/site-packages/markdown_exec/_internal/formatters/python.py", line 71, in _run_python
-    exec_python(code, code_block_id, exec_globals)
-  File "/home/runner/.cache/pypoetry/virtualenvs/scenario-evaluation-criteria-0NOCqcfx-py3.12/lib/python3.12/site-packages/markdown_exec/_internal/formatters/_exec_python.py", line 8, in exec_python
-    exec(compiled, exec_globals)  # noqa: S102
-    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "<code block: session refdata; n1>", line 6, in <module>
-    sources_formatted = format_sources(sources)
-                         ^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/scenario-evaluation-criteria/scenario-evaluation-criteria/python/scenario_evaluation_criteria/formatting.py", line 132, in format_sources
-    raise Exception(
-Exception: Error occurred while parsing 'UNEP-FWIR-2021':
-missing institution in UNEP-FWIR-2021</p>
-<p>````````</p>
+<p><table>
+<thead>
+<tr>
+<th>Dataset</th>
+<th>Source</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#exec-4--ceds-2025"><code>CEDS-2025</code></a></td>
+<td><a href="../sources/#CEDS-2025">Hoesly (2025)</a></td>
+<td>Based on <a href="../sources/#CEDS-2025">Hoesly (2025)</a>.</td>
+</tr>
+<tr>
+<td><a href="#exec-4--ceds-2025-covidaveraged"><code>CEDS-2025-COVIDaveraged</code></a></td>
+<td><a href="../sources/#CEDS-2025">Hoesly (2025)</a></td>
+<td>Data from <a href="../sources/#CEDS-2025">Hoesly (2025)</a> averaged over period Jan 2018 till Dec 2022 (to account for the idiosyncratic COVID-19 dip in 2020).</td>
+</tr>
+<tr>
+<td><a href="#exec-4--ceds-2025-extrapol25"><code>CEDS-2025-extrapol25</code></a></td>
+<td><a href="../sources/#CEDS-2025">Hoesly (2025)</a></td>
+<td>Data from <a href="../sources/#CEDS-2025">Hoesly (2025)</a> linearly extrapolated to 2025 using the 2022-2023 average growth rate.</td>
+</tr>
+<tr>
+<td><a href="#exec-4--iea-esdb-20250610"><code>IEA-ESDB-20250610</code></a></td>
+<td><a href="../sources/#IEA-ESDB-20250610">IEA (2025)</a></td>
+<td>Based on <a href="../sources/#IEA-ESDB-20250610">IEA (2025)</a>. Primary Energy variables are taken from the total energy supply reported by the IEA.</td>
+</tr>
+<tr>
+<td><a href="#exec-4--iea-esdb-20250610-covidaveraged"><code>IEA-ESDB-20250610-COVIDaveraged</code></a></td>
+<td><a href="../sources/#IEA-ESDB-20250610">IEA (2025)</a></td>
+<td>Data from <a href="../sources/#IEA-ESDB-20250610">IEA (2025)</a> averaged over period Jan 2018 till Dec 2022 (to account for the idiosyncratic COVID-19 dip in 2020). Primary Energy variables are taken from the total energy supply reported by the IEA.</td>
+</tr>
+<tr>
+<td><a href="#exec-4--iea-esdb-20250610-extrapol25"><code>IEA-ESDB-20250610-extrapol25</code></a></td>
+<td><a href="../sources/#IEA-ESDB-20250610">IEA (2025)</a></td>
+<td>Data from <a href="../sources/#IEA-ESDB-20250610">IEA (2025)</a> extrapolated to 2025 using the 2021-2023 average growth rate. Primary Energy variables are taken from the total energy supply reported by the IEA.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="exec-4--ceds-2025">CEDS-2025</h2>
+<p>Based on <a href="../sources/#CEDS-2025">Hoesly (2025)</a>.</p>
+<div>
+<!--| quarto-html-table-processing: none -->
+<table id="itables_04b8b85a_b3f5_416d_be30_3fbf8529620e">
+  <tbody>
+    <tr>
+      <td style="vertical-align:middle; text-align:left"><a href=https://mwouts.github.io/itables/><svg class="main-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+width="64" viewBox="0 0 500 400" style="font-family: 'Droid Sans', sans-serif;">
+    <g style="fill:#d9d7fc">
+        <path d="M100,400H500V357H100Z" />
+        <path d="M100,300H400V257H100Z" />
+        <path d="M0,200H400V157H0Z" />
+        <path d="M100,100H500V57H100Z" />
+        <path d="M100,350H500V307H100Z" />
+        <path d="M100,250H400V207H100Z" />
+        <path d="M0,150H400V107H0Z" />
+        <path d="M100,50H500V7H100Z" />
+    </g>
+    <g style="fill:#1a1366;stroke:#1a1366;">
+   <rect x="100" y="7" width="400" height="43">
+    <animate
+      attributeName="width"
+      values="0;400;0"
+      dur="5s"
+      repeatCount="indefinite" />
+      <animate
+      attributeName="x"
+      values="100;100;500"
+      dur="5s"
+      repeatCount="indefinite" />
+  </rect>
+        <rect x="0" y="107" width="400" height="43">
+    <animate
+      attributeName="width"
+      values="0;400;0"
+      dur="3.5s"
+      repeatCount="indefinite" />
+    <animate
+      attributeName="x"
+      values="0;0;400"
+      dur="3.5s"
+      repeatCount="indefinite" />
+  </rect>
+        <rect x="100" y="207" width="300" height="43">
+    <animate
+      attributeName="width"
+      values="0;300;0"
+      dur="3s"
+      repeatCount="indefinite" />
+    <animate
+      attributeName="x"
+      values="100;100;400"
+      dur="3s"
+      repeatCount="indefinite" />
+  </rect>
+        <rect x="100" y="307" width="400" height="43">
+    <animate
+      attributeName="width"
+      values="0;400;0"
+      dur="4s"
+      repeatCount="indefinite" />
+      <animate
+      attributeName="x"
+      values="100;100;500"
+      dur="4s"
+      repeatCount="indefinite" />
+  </rect>
+        <g style="fill:transparent;stroke-width:8; stroke-linejoin:round" rx="5">
+            <g transform="translate(45 50) rotate(-45)">
+                <circle r="33" cx="0" cy="0" />
+                <rect x="-8" y="32" width="16" height="30" />
+            </g>
+
+            <g transform="translate(450 152)">
+                <polyline points="-15,-20 -35,-20 -35,40 25,40 25,20" />
+                <rect x="-15" y="-40" width="60" height="60" />
+            </g>
+
+            <g transform="translate(50 352)">
+                <polygon points="-35,-5 0,-40 35,-5" />
+                <polygon points="-35,10 0,45 35,10" />
+            </g>
+
+            <g transform="translate(75 250)">
+                <polyline points="-30,30 -60,0 -30,-30" />
+                <polyline points="0,30 -30,0 0,-30" />
+            </g>
+
+            <g transform="translate(425 250) rotate(180)">
+                <polyline points="-30,30 -60,0 -30,-30" />
+                <polyline points="0,30 -30,0 0,-30" />
+            </g>
+        </g>
+    </g>
+</svg>
+</a>
+        Loading ITables v2.8.1 from the internet...
+        (need <a href=https://mwouts.github.io/itables/troubleshooting.html>help</a>?)
+      </td>
+    </tr>
+  </tbody>
+</table>
+<link href="https://www.unpkg.com/dt_for_itables@2.5.5/dt_bundle.css" rel="stylesheet">
+<script type="module">
+    import { ITable, jQuery as $ } from 'https://www.unpkg.com/dt_for_itables@2.5.5/dt_bundle.js';
+
+    document.querySelectorAll("#itables_04b8b85a_b3f5_416d_be30_3fbf8529620e:not(.dataTable)").forEach(table => {
+        if (!(table instanceof HTMLTableElement))
+            return;
+
+        let dt_args = {
+          "classes": ["display", "nowrap", "compact"],
+          "columnDefs": [{"render": "function (data, type, row, meta) { return type === 'sort' || type === 'type' ? data[1] : data[0]; }", "targets": [5]}],
+          "data_json": "[[0, \"Emissions|CO2|Energy and Industrial Processes\", 2010, \"World\", \"Mt CO2/yr\", [\"33460.0812\", 33460.0812]], [1, \"Emissions|CO2|Energy and Industrial Processes\", 2015, \"World\", \"Mt CO2/yr\", [\"35627.2810\", 35627.281]], [2, \"Emissions|CO2|Energy and Industrial Processes\", 2020, \"World\", \"Mt CO2/yr\", [\"35387.0617\", 35387.0617]]]",
+          "keys_to_be_evaluated": [["columnDefs", 0, "render"]],
+          "layout": {"bottomEnd": null, "bottomStart": null, "topEnd": null, "topStart": null},
+          "order": [],
+          "style": {"width": "100%"},
+          "table_html": "<table><thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>variable</th>\n      <th>year</th>\n      <th>region</th>\n      <th>unit</th>\n      <th>value</th>\n    </tr>\n  </thead></table>",
+          "text_in_header_can_be_selected": true
+        };
+        new ITable(table, dt_args);
+    });
+</script>
+
+</div>
+
+<h2 id="exec-4--ceds-2025-covidaveraged">CEDS-2025-COVIDaveraged</h2>
+<p>Data from <a href="../sources/#CEDS-2025">Hoesly (2025)</a> averaged over period Jan 2018 till Dec 2022 (to account for the idiosyncratic COVID-19 dip in 2020).</p>
+<div>
+<!--| quarto-html-table-processing: none -->
+<table id="itables_b426232c_ef75_43ce_866d_086de1c3073f">
+  <tbody>
+    <tr>
+      <td style="vertical-align:middle; text-align:left"><a href=https://mwouts.github.io/itables/><svg class="main-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+width="64" viewBox="0 0 500 400" style="font-family: 'Droid Sans', sans-serif;">
+    <g style="fill:#d9d7fc">
+        <path d="M100,400H500V357H100Z" />
+        <path d="M100,300H400V257H100Z" />
+        <path d="M0,200H400V157H0Z" />
+        <path d="M100,100H500V57H100Z" />
+        <path d="M100,350H500V307H100Z" />
+        <path d="M100,250H400V207H100Z" />
+        <path d="M0,150H400V107H0Z" />
+        <path d="M100,50H500V7H100Z" />
+    </g>
+    <g style="fill:#1a1366;stroke:#1a1366;">
+   <rect x="100" y="7" width="400" height="43">
+    <animate
+      attributeName="width"
+      values="0;400;0"
+      dur="5s"
+      repeatCount="indefinite" />
+      <animate
+      attributeName="x"
+      values="100;100;500"
+      dur="5s"
+      repeatCount="indefinite" />
+  </rect>
+        <rect x="0" y="107" width="400" height="43">
+    <animate
+      attributeName="width"
+      values="0;400;0"
+      dur="3.5s"
+      repeatCount="indefinite" />
+    <animate
+      attributeName="x"
+      values="0;0;400"
+      dur="3.5s"
+      repeatCount="indefinite" />
+  </rect>
+        <rect x="100" y="207" width="300" height="43">
+    <animate
+      attributeName="width"
+      values="0;300;0"
+      dur="3s"
+      repeatCount="indefinite" />
+    <animate
+      attributeName="x"
+      values="100;100;400"
+      dur="3s"
+      repeatCount="indefinite" />
+  </rect>
+        <rect x="100" y="307" width="400" height="43">
+    <animate
+      attributeName="width"
+      values="0;400;0"
+      dur="4s"
+      repeatCount="indefinite" />
+      <animate
+      attributeName="x"
+      values="100;100;500"
+      dur="4s"
+      repeatCount="indefinite" />
+  </rect>
+        <g style="fill:transparent;stroke-width:8; stroke-linejoin:round" rx="5">
+            <g transform="translate(45 50) rotate(-45)">
+                <circle r="33" cx="0" cy="0" />
+                <rect x="-8" y="32" width="16" height="30" />
+            </g>
+
+            <g transform="translate(450 152)">
+                <polyline points="-15,-20 -35,-20 -35,40 25,40 25,20" />
+                <rect x="-15" y="-40" width="60" height="60" />
+            </g>
+
+            <g transform="translate(50 352)">
+                <polygon points="-35,-5 0,-40 35,-5" />
+                <polygon points="-35,10 0,45 35,10" />
+            </g>
+
+            <g transform="translate(75 250)">
+                <polyline points="-30,30 -60,0 -30,-30" />
+                <polyline points="0,30 -30,0 0,-30" />
+            </g>
+
+            <g transform="translate(425 250) rotate(180)">
+                <polyline points="-30,30 -60,0 -30,-30" />
+                <polyline points="0,30 -30,0 0,-30" />
+            </g>
+        </g>
+    </g>
+</svg>
+</a>
+        Loading ITables v2.8.1 from the internet...
+        (need <a href=https://mwouts.github.io/itables/troubleshooting.html>help</a>?)
+      </td>
+    </tr>
+  </tbody>
+</table>
+<link href="https://www.unpkg.com/dt_for_itables@2.5.5/dt_bundle.css" rel="stylesheet">
+<script type="module">
+    import { ITable, jQuery as $ } from 'https://www.unpkg.com/dt_for_itables@2.5.5/dt_bundle.js';
+
+    document.querySelectorAll("#itables_b426232c_ef75_43ce_866d_086de1c3073f:not(.dataTable)").forEach(table => {
+        if (!(table instanceof HTMLTableElement))
+            return;
+
+        let dt_args = {
+          "classes": ["display", "nowrap", "compact"],
+          "columnDefs": [{"render": "function (data, type, row, meta) { return type === 'sort' || type === 'type' ? data[1] : data[0]; }", "targets": [5]}],
+          "data_json": "[[3, \"Emissions|CO2|Energy and Industrial Processes\", 2020, \"World\", \"Mt CO2/yr\", [\"36874.1129\", 36874.1129]]]",
+          "keys_to_be_evaluated": [["columnDefs", 0, "render"]],
+          "layout": {"bottomEnd": null, "bottomStart": null, "topEnd": null, "topStart": null},
+          "order": [],
+          "style": {"width": "100%"},
+          "table_html": "<table><thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>variable</th>\n      <th>year</th>\n      <th>region</th>\n      <th>unit</th>\n      <th>value</th>\n    </tr>\n  </thead></table>",
+          "text_in_header_can_be_selected": true
+        };
+        new ITable(table, dt_args);
+    });
+</script>
+
+</div>
+
+<h2 id="exec-4--ceds-2025-extrapol25">CEDS-2025-extrapol25</h2>
+<p>Data from <a href="../sources/#CEDS-2025">Hoesly (2025)</a> linearly extrapolated to 2025 using the 2022-2023 average growth rate.</p>
+<div>
+<!--| quarto-html-table-processing: none -->
+<table id="itables_5d022583_3f51_4ecd_ae81_b2aa09ab013e">
+  <tbody>
+    <tr>
+      <td style="vertical-align:middle; text-align:left"><a href=https://mwouts.github.io/itables/><svg class="main-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+width="64" viewBox="0 0 500 400" style="font-family: 'Droid Sans', sans-serif;">
+    <g style="fill:#d9d7fc">
+        <path d="M100,400H500V357H100Z" />
+        <path d="M100,300H400V257H100Z" />
+        <path d="M0,200H400V157H0Z" />
+        <path d="M100,100H500V57H100Z" />
+        <path d="M100,350H500V307H100Z" />
+        <path d="M100,250H400V207H100Z" />
+        <path d="M0,150H400V107H0Z" />
+        <path d="M100,50H500V7H100Z" />
+    </g>
+    <g style="fill:#1a1366;stroke:#1a1366;">
+   <rect x="100" y="7" width="400" height="43">
+    <animate
+      attributeName="width"
+      values="0;400;0"
+      dur="5s"
+      repeatCount="indefinite" />
+      <animate
+      attributeName="x"
+      values="100;100;500"
+      dur="5s"
+      repeatCount="indefinite" />
+  </rect>
+        <rect x="0" y="107" width="400" height="43">
+    <animate
+      attributeName="width"
+      values="0;400;0"
+      dur="3.5s"
+      repeatCount="indefinite" />
+    <animate
+      attributeName="x"
+      values="0;0;400"
+      dur="3.5s"
+      repeatCount="indefinite" />
+  </rect>
+        <rect x="100" y="207" width="300" height="43">
+    <animate
+      attributeName="width"
+      values="0;300;0"
+      dur="3s"
+      repeatCount="indefinite" />
+    <animate
+      attributeName="x"
+      values="100;100;400"
+      dur="3s"
+      repeatCount="indefinite" />
+  </rect>
+        <rect x="100" y="307" width="400" height="43">
+    <animate
+      attributeName="width"
+      values="0;400;0"
+      dur="4s"
+      repeatCount="indefinite" />
+      <animate
+      attributeName="x"
+      values="100;100;500"
+      dur="4s"
+      repeatCount="indefinite" />
+  </rect>
+        <g style="fill:transparent;stroke-width:8; stroke-linejoin:round" rx="5">
+            <g transform="translate(45 50) rotate(-45)">
+                <circle r="33" cx="0" cy="0" />
+                <rect x="-8" y="32" width="16" height="30" />
+            </g>
+
+            <g transform="translate(450 152)">
+                <polyline points="-15,-20 -35,-20 -35,40 25,40 25,20" />
+                <rect x="-15" y="-40" width="60" height="60" />
+            </g>
+
+            <g transform="translate(50 352)">
+                <polygon points="-35,-5 0,-40 35,-5" />
+                <polygon points="-35,10 0,45 35,10" />
+            </g>
+
+            <g transform="translate(75 250)">
+                <polyline points="-30,30 -60,0 -30,-30" />
+                <polyline points="0,30 -30,0 0,-30" />
+            </g>
+
+            <g transform="translate(425 250) rotate(180)">
+                <polyline points="-30,30 -60,0 -30,-30" />
+                <polyline points="0,30 -30,0 0,-30" />
+            </g>
+        </g>
+    </g>
+</svg>
+</a>
+        Loading ITables v2.8.1 from the internet...
+        (need <a href=https://mwouts.github.io/itables/troubleshooting.html>help</a>?)
+      </td>
+    </tr>
+  </tbody>
+</table>
+<link href="https://www.unpkg.com/dt_for_itables@2.5.5/dt_bundle.css" rel="stylesheet">
+<script type="module">
+    import { ITable, jQuery as $ } from 'https://www.unpkg.com/dt_for_itables@2.5.5/dt_bundle.js';
+
+    document.querySelectorAll("#itables_5d022583_3f51_4ecd_ae81_b2aa09ab013e:not(.dataTable)").forEach(table => {
+        if (!(table instanceof HTMLTableElement))
+            return;
+
+        let dt_args = {
+          "classes": ["display", "nowrap", "compact"],
+          "columnDefs": [{"render": "function (data, type, row, meta) { return type === 'sort' || type === 'type' ? data[1] : data[0]; }", "targets": [5]}],
+          "data_json": "[[4, \"Emissions|CO2|Energy and Industrial Processes\", 2025, \"World\", \"Mt CO2/yr\", [\"39383.4852\", 39383.48519999999]]]",
+          "keys_to_be_evaluated": [["columnDefs", 0, "render"]],
+          "layout": {"bottomEnd": null, "bottomStart": null, "topEnd": null, "topStart": null},
+          "order": [],
+          "style": {"width": "100%"},
+          "table_html": "<table><thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>variable</th>\n      <th>year</th>\n      <th>region</th>\n      <th>unit</th>\n      <th>value</th>\n    </tr>\n  </thead></table>",
+          "text_in_header_can_be_selected": true
+        };
+        new ITable(table, dt_args);
+    });
+</script>
+
+</div>
+
+<h2 id="exec-4--iea-esdb-20250610">IEA-ESDB-20250610</h2>
+<p>Based on <a href="../sources/#IEA-ESDB-20250610">IEA (2025)</a>. Primary Energy variables are taken from the total energy supply reported by the IEA.</p>
+<div>
+<!--| quarto-html-table-processing: none -->
+<table id="itables_b6cd1258_b306_43ea_ac3f_2a5781e1dc13">
+  <tbody>
+    <tr>
+      <td style="vertical-align:middle; text-align:left"><a href=https://mwouts.github.io/itables/><svg class="main-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+width="64" viewBox="0 0 500 400" style="font-family: 'Droid Sans', sans-serif;">
+    <g style="fill:#d9d7fc">
+        <path d="M100,400H500V357H100Z" />
+        <path d="M100,300H400V257H100Z" />
+        <path d="M0,200H400V157H0Z" />
+        <path d="M100,100H500V57H100Z" />
+        <path d="M100,350H500V307H100Z" />
+        <path d="M100,250H400V207H100Z" />
+        <path d="M0,150H400V107H0Z" />
+        <path d="M100,50H500V7H100Z" />
+    </g>
+    <g style="fill:#1a1366;stroke:#1a1366;">
+   <rect x="100" y="7" width="400" height="43">
+    <animate
+      attributeName="width"
+      values="0;400;0"
+      dur="5s"
+      repeatCount="indefinite" />
+      <animate
+      attributeName="x"
+      values="100;100;500"
+      dur="5s"
+      repeatCount="indefinite" />
+  </rect>
+        <rect x="0" y="107" width="400" height="43">
+    <animate
+      attributeName="width"
+      values="0;400;0"
+      dur="3.5s"
+      repeatCount="indefinite" />
+    <animate
+      attributeName="x"
+      values="0;0;400"
+      dur="3.5s"
+      repeatCount="indefinite" />
+  </rect>
+        <rect x="100" y="207" width="300" height="43">
+    <animate
+      attributeName="width"
+      values="0;300;0"
+      dur="3s"
+      repeatCount="indefinite" />
+    <animate
+      attributeName="x"
+      values="100;100;400"
+      dur="3s"
+      repeatCount="indefinite" />
+  </rect>
+        <rect x="100" y="307" width="400" height="43">
+    <animate
+      attributeName="width"
+      values="0;400;0"
+      dur="4s"
+      repeatCount="indefinite" />
+      <animate
+      attributeName="x"
+      values="100;100;500"
+      dur="4s"
+      repeatCount="indefinite" />
+  </rect>
+        <g style="fill:transparent;stroke-width:8; stroke-linejoin:round" rx="5">
+            <g transform="translate(45 50) rotate(-45)">
+                <circle r="33" cx="0" cy="0" />
+                <rect x="-8" y="32" width="16" height="30" />
+            </g>
+
+            <g transform="translate(450 152)">
+                <polyline points="-15,-20 -35,-20 -35,40 25,40 25,20" />
+                <rect x="-15" y="-40" width="60" height="60" />
+            </g>
+
+            <g transform="translate(50 352)">
+                <polygon points="-35,-5 0,-40 35,-5" />
+                <polygon points="-35,10 0,45 35,10" />
+            </g>
+
+            <g transform="translate(75 250)">
+                <polyline points="-30,30 -60,0 -30,-30" />
+                <polyline points="0,30 -30,0 0,-30" />
+            </g>
+
+            <g transform="translate(425 250) rotate(180)">
+                <polyline points="-30,30 -60,0 -30,-30" />
+                <polyline points="0,30 -30,0 0,-30" />
+            </g>
+        </g>
+    </g>
+</svg>
+</a>
+        Loading ITables v2.8.1 from the internet...
+        (need <a href=https://mwouts.github.io/itables/troubleshooting.html>help</a>?)
+      </td>
+    </tr>
+  </tbody>
+</table>
+<link href="https://www.unpkg.com/dt_for_itables@2.5.5/dt_bundle.css" rel="stylesheet">
+<script type="module">
+    import { ITable, jQuery as $ } from 'https://www.unpkg.com/dt_for_itables@2.5.5/dt_bundle.js';
+
+    document.querySelectorAll("#itables_b6cd1258_b306_43ea_ac3f_2a5781e1dc13:not(.dataTable)").forEach(table => {
+        if (!(table instanceof HTMLTableElement))
+            return;
+
+        let dt_args = {
+          "classes": ["display", "nowrap", "compact"],
+          "columnDefs": [{"render": "function (data, type, row, meta) { return type === 'sort' || type === 'type' ? data[1] : data[0]; }", "targets": [5]}],
+          "data_json": "[[5, \"Final Energy\", 2010, \"World\", \"EJ/yr\", [\"365.074\", 365.074]], [6, \"Final Energy\", 2015, \"World\", \"EJ/yr\", [\"389.565\", 389.565]], [7, \"Final Energy\", 2020, \"World\", \"EJ/yr\", [\"395.783\", 395.783]], [8, \"Primary Energy|Coal\", 2010, \"World\", \"EJ/yr\", [\"152.626\", 152.626]], [9, \"Primary Energy|Coal\", 2015, \"World\", \"EJ/yr\", [\"160.978\", 160.978]], [10, \"Primary Energy|Coal\", 2020, \"World\", \"EJ/yr\", [\"157.632\", 157.632]], [11, \"Primary Energy|Gas\", 2010, \"World\", \"EJ/yr\", [\"114.576\", 114.576]], [12, \"Primary Energy|Gas\", 2015, \"World\", \"EJ/yr\", [\"122.402\", 122.402]], [13, \"Primary Energy|Gas\", 2020, \"World\", \"EJ/yr\", [\"137.997\", 137.997]], [14, \"Primary Energy|Oil\", 2010, \"World\", \"EJ/yr\", [\"175.371\", 175.371]], [15, \"Primary Energy|Oil\", 2015, \"World\", \"EJ/yr\", [\"186.707\", 186.707]], [16, \"Primary Energy|Oil\", 2020, \"World\", \"EJ/yr\", [\"177.570\", 177.57]], [17, \"Primary Energy|Nuclear\", 2010, \"World\", \"EJ/yr\", [\"9.923\", 9.923]], [18, \"Primary Energy|Nuclear\", 2015, \"World\", \"EJ/yr\", [\"9.252\", 9.252]], [19, \"Primary Energy|Nuclear\", 2020, \"World\", \"EJ/yr\", [\"9.635\", 9.635]]]",
+          "keys_to_be_evaluated": [["columnDefs", 0, "render"]],
+          "layout": {"bottomEnd": "paging", "bottomStart": "info", "topEnd": "search", "topStart": "pageLength"},
+          "order": [],
+          "style": {"width": "100%"},
+          "table_html": "<table><thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>variable</th>\n      <th>year</th>\n      <th>region</th>\n      <th>unit</th>\n      <th>value</th>\n    </tr>\n  </thead></table>",
+          "text_in_header_can_be_selected": true
+        };
+        new ITable(table, dt_args);
+    });
+</script>
+
+</div>
+
+<h2 id="exec-4--iea-esdb-20250610-covidaveraged">IEA-ESDB-20250610-COVIDaveraged</h2>
+<p>Data from <a href="../sources/#IEA-ESDB-20250610">IEA (2025)</a> averaged over period Jan 2018 till Dec 2022 (to account for the idiosyncratic COVID-19 dip in 2020). Primary Energy variables are taken from the total energy supply reported by the IEA.</p>
+<div>
+<!--| quarto-html-table-processing: none -->
+<table id="itables_68c4e156_10c8_4640_a671_5013180a48b7">
+  <tbody>
+    <tr>
+      <td style="vertical-align:middle; text-align:left"><a href=https://mwouts.github.io/itables/><svg class="main-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+width="64" viewBox="0 0 500 400" style="font-family: 'Droid Sans', sans-serif;">
+    <g style="fill:#d9d7fc">
+        <path d="M100,400H500V357H100Z" />
+        <path d="M100,300H400V257H100Z" />
+        <path d="M0,200H400V157H0Z" />
+        <path d="M100,100H500V57H100Z" />
+        <path d="M100,350H500V307H100Z" />
+        <path d="M100,250H400V207H100Z" />
+        <path d="M0,150H400V107H0Z" />
+        <path d="M100,50H500V7H100Z" />
+    </g>
+    <g style="fill:#1a1366;stroke:#1a1366;">
+   <rect x="100" y="7" width="400" height="43">
+    <animate
+      attributeName="width"
+      values="0;400;0"
+      dur="5s"
+      repeatCount="indefinite" />
+      <animate
+      attributeName="x"
+      values="100;100;500"
+      dur="5s"
+      repeatCount="indefinite" />
+  </rect>
+        <rect x="0" y="107" width="400" height="43">
+    <animate
+      attributeName="width"
+      values="0;400;0"
+      dur="3.5s"
+      repeatCount="indefinite" />
+    <animate
+      attributeName="x"
+      values="0;0;400"
+      dur="3.5s"
+      repeatCount="indefinite" />
+  </rect>
+        <rect x="100" y="207" width="300" height="43">
+    <animate
+      attributeName="width"
+      values="0;300;0"
+      dur="3s"
+      repeatCount="indefinite" />
+    <animate
+      attributeName="x"
+      values="100;100;400"
+      dur="3s"
+      repeatCount="indefinite" />
+  </rect>
+        <rect x="100" y="307" width="400" height="43">
+    <animate
+      attributeName="width"
+      values="0;400;0"
+      dur="4s"
+      repeatCount="indefinite" />
+      <animate
+      attributeName="x"
+      values="100;100;500"
+      dur="4s"
+      repeatCount="indefinite" />
+  </rect>
+        <g style="fill:transparent;stroke-width:8; stroke-linejoin:round" rx="5">
+            <g transform="translate(45 50) rotate(-45)">
+                <circle r="33" cx="0" cy="0" />
+                <rect x="-8" y="32" width="16" height="30" />
+            </g>
+
+            <g transform="translate(450 152)">
+                <polyline points="-15,-20 -35,-20 -35,40 25,40 25,20" />
+                <rect x="-15" y="-40" width="60" height="60" />
+            </g>
+
+            <g transform="translate(50 352)">
+                <polygon points="-35,-5 0,-40 35,-5" />
+                <polygon points="-35,10 0,45 35,10" />
+            </g>
+
+            <g transform="translate(75 250)">
+                <polyline points="-30,30 -60,0 -30,-30" />
+                <polyline points="0,30 -30,0 0,-30" />
+            </g>
+
+            <g transform="translate(425 250) rotate(180)">
+                <polyline points="-30,30 -60,0 -30,-30" />
+                <polyline points="0,30 -30,0 0,-30" />
+            </g>
+        </g>
+    </g>
+</svg>
+</a>
+        Loading ITables v2.8.1 from the internet...
+        (need <a href=https://mwouts.github.io/itables/troubleshooting.html>help</a>?)
+      </td>
+    </tr>
+  </tbody>
+</table>
+<link href="https://www.unpkg.com/dt_for_itables@2.5.5/dt_bundle.css" rel="stylesheet">
+<script type="module">
+    import { ITable, jQuery as $ } from 'https://www.unpkg.com/dt_for_itables@2.5.5/dt_bundle.js';
+
+    document.querySelectorAll("#itables_68c4e156_10c8_4640_a671_5013180a48b7:not(.dataTable)").forEach(table => {
+        if (!(table instanceof HTMLTableElement))
+            return;
+
+        let dt_args = {
+          "classes": ["display", "nowrap", "compact"],
+          "columnDefs": [{"render": "function (data, type, row, meta) { return type === 'sort' || type === 'type' ? data[1] : data[0]; }", "targets": [5]}],
+          "data_json": "[[20, \"Final Energy\", 2020, \"World\", \"EJ/yr\", [\"411.687\", 411.687]], [21, \"Primary Energy|Coal\", 2020, \"World\", \"EJ/yr\", [\"164.576\", 164.576]], [22, \"Primary Energy|Gas\", 2020, \"World\", \"EJ/yr\", [\"140.505\", 140.505]], [23, \"Primary Energy|Oil\", 2020, \"World\", \"EJ/yr\", [\"188.133\", 188.133]], [24, \"Primary Energy|Nuclear\", 2020, \"World\", \"EJ/yr\", [\"9.844\", 9.844]]]",
+          "keys_to_be_evaluated": [["columnDefs", 0, "render"]],
+          "layout": {"bottomEnd": null, "bottomStart": null, "topEnd": null, "topStart": null},
+          "order": [],
+          "style": {"width": "100%"},
+          "table_html": "<table><thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>variable</th>\n      <th>year</th>\n      <th>region</th>\n      <th>unit</th>\n      <th>value</th>\n    </tr>\n  </thead></table>",
+          "text_in_header_can_be_selected": true
+        };
+        new ITable(table, dt_args);
+    });
+</script>
+
+</div>
+
+<h2 id="exec-4--iea-esdb-20250610-extrapol25">IEA-ESDB-20250610-extrapol25</h2>
+<p>Data from <a href="../sources/#IEA-ESDB-20250610">IEA (2025)</a> extrapolated to 2025 using the 2021-2023 average growth rate. Primary Energy variables are taken from the total energy supply reported by the IEA.</p>
+<div>
+<!--| quarto-html-table-processing: none -->
+<table id="itables_0864e530_3a4d_4458_8380_9db10607722a">
+  <tbody>
+    <tr>
+      <td style="vertical-align:middle; text-align:left"><a href=https://mwouts.github.io/itables/><svg class="main-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+width="64" viewBox="0 0 500 400" style="font-family: 'Droid Sans', sans-serif;">
+    <g style="fill:#d9d7fc">
+        <path d="M100,400H500V357H100Z" />
+        <path d="M100,300H400V257H100Z" />
+        <path d="M0,200H400V157H0Z" />
+        <path d="M100,100H500V57H100Z" />
+        <path d="M100,350H500V307H100Z" />
+        <path d="M100,250H400V207H100Z" />
+        <path d="M0,150H400V107H0Z" />
+        <path d="M100,50H500V7H100Z" />
+    </g>
+    <g style="fill:#1a1366;stroke:#1a1366;">
+   <rect x="100" y="7" width="400" height="43">
+    <animate
+      attributeName="width"
+      values="0;400;0"
+      dur="5s"
+      repeatCount="indefinite" />
+      <animate
+      attributeName="x"
+      values="100;100;500"
+      dur="5s"
+      repeatCount="indefinite" />
+  </rect>
+        <rect x="0" y="107" width="400" height="43">
+    <animate
+      attributeName="width"
+      values="0;400;0"
+      dur="3.5s"
+      repeatCount="indefinite" />
+    <animate
+      attributeName="x"
+      values="0;0;400"
+      dur="3.5s"
+      repeatCount="indefinite" />
+  </rect>
+        <rect x="100" y="207" width="300" height="43">
+    <animate
+      attributeName="width"
+      values="0;300;0"
+      dur="3s"
+      repeatCount="indefinite" />
+    <animate
+      attributeName="x"
+      values="100;100;400"
+      dur="3s"
+      repeatCount="indefinite" />
+  </rect>
+        <rect x="100" y="307" width="400" height="43">
+    <animate
+      attributeName="width"
+      values="0;400;0"
+      dur="4s"
+      repeatCount="indefinite" />
+      <animate
+      attributeName="x"
+      values="100;100;500"
+      dur="4s"
+      repeatCount="indefinite" />
+  </rect>
+        <g style="fill:transparent;stroke-width:8; stroke-linejoin:round" rx="5">
+            <g transform="translate(45 50) rotate(-45)">
+                <circle r="33" cx="0" cy="0" />
+                <rect x="-8" y="32" width="16" height="30" />
+            </g>
+
+            <g transform="translate(450 152)">
+                <polyline points="-15,-20 -35,-20 -35,40 25,40 25,20" />
+                <rect x="-15" y="-40" width="60" height="60" />
+            </g>
+
+            <g transform="translate(50 352)">
+                <polygon points="-35,-5 0,-40 35,-5" />
+                <polygon points="-35,10 0,45 35,10" />
+            </g>
+
+            <g transform="translate(75 250)">
+                <polyline points="-30,30 -60,0 -30,-30" />
+                <polyline points="0,30 -30,0 0,-30" />
+            </g>
+
+            <g transform="translate(425 250) rotate(180)">
+                <polyline points="-30,30 -60,0 -30,-30" />
+                <polyline points="0,30 -30,0 0,-30" />
+            </g>
+        </g>
+    </g>
+</svg>
+</a>
+        Loading ITables v2.8.1 from the internet...
+        (need <a href=https://mwouts.github.io/itables/troubleshooting.html>help</a>?)
+      </td>
+    </tr>
+  </tbody>
+</table>
+<link href="https://www.unpkg.com/dt_for_itables@2.5.5/dt_bundle.css" rel="stylesheet">
+<script type="module">
+    import { ITable, jQuery as $ } from 'https://www.unpkg.com/dt_for_itables@2.5.5/dt_bundle.js';
+
+    document.querySelectorAll("#itables_0864e530_3a4d_4458_8380_9db10607722a:not(.dataTable)").forEach(table => {
+        if (!(table instanceof HTMLTableElement))
+            return;
+
+        let dt_args = {
+          "classes": ["display", "nowrap", "compact"],
+          "columnDefs": [{"render": "function (data, type, row, meta) { return type === 'sort' || type === 'type' ? data[1] : data[0]; }", "targets": [5]}],
+          "data_json": "[[25, \"Final Energy\", 2025, \"World\", \"EJ/yr\", [\"442.651\", 442.651]], [26, \"Primary Energy|Coal\", 2025, \"World\", \"EJ/yr\", [\"182.501\", 182.501]], [27, \"Primary Energy|Gas\", 2025, \"World\", \"EJ/yr\", [\"142.440\", 142.44]], [28, \"Primary Energy|Oil\", 2025, \"World\", \"EJ/yr\", [\"200.356\", 200.356]], [29, \"Primary Energy|Nuclear\", 2025, \"World\", \"EJ/yr\", [\"9.602\", 9.602]]]",
+          "keys_to_be_evaluated": [["columnDefs", 0, "render"]],
+          "layout": {"bottomEnd": null, "bottomStart": null, "topEnd": null, "topStart": null},
+          "order": [],
+          "style": {"width": "100%"},
+          "table_html": "<table><thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>variable</th>\n      <th>year</th>\n      <th>region</th>\n      <th>unit</th>\n      <th>value</th>\n    </tr>\n  </thead></table>",
+          "text_in_header_can_be_selected": true
+        };
+        new ITable(table, dt_args);
+    });
+</script>
+
+</div>
+</p>
 
 
 

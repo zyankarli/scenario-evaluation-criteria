@@ -1101,6 +1101,7 @@ necessary/relevant and how its threshold values were chosen.</p>
 <th style="text-align: left;">NAME</th>
 <th style="text-align: left;">JUSTIFICATION OF THE CRITERION<br>(Why this criterion?)</th>
 <th style="text-align: left;">JUSTIFICATION OF THE THRESHOLD<br>(Why this threshold?)</th>
+<th style="text-align: left;">NOTE</th>
 </tr>
 </thead>
 <tbody>
@@ -1108,31 +1109,37 @@ necessary/relevant and how its threshold values were chosen.</p>
 <td style="text-align: left;"><code>Historical Vetting|Emissions|CO2|Energy and Industrial Processes</code></td>
 <td style="text-align: left;">This criterion flags scenarios that report CO₂ emissions in the energy supply, energy demand, and industry sectors that are inconsistent with historical values.<br><br>This is a concern because the underlying modelling likely makes false assumptions on the remaining GHG emissions budget and the mitigation effort required to reach net-zero emissions.</td>
 <td style="text-align: left;">Historical values are provided by the Community Emissions Data System  <a href="../sources/#CEDS-2025">(Hoesly, 2025)</a>.<br><br>Based on this historical data, we assume the following global threshold for years 2010, 2015, 2020 and 2025:<br>• Lower and upper threshold, failed vetting:  ±20% deviation.<br><br>Note that these ranges not only give models some leeway to deviate, but  also account for uncertainty in the underlying data sources.<br><br>The threshold for 2025 is derived using the 2023 value and the 2022–2023 growth rate.<br><br>To account for the COVID-19 shock, the threshold for 2020 is derived using both the reported value in 2020 and the value averaged over the period Jan 2018 until Dec 2022, taking whichever is more permissive for the scenario in question.</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>Historical Vetting|Primary Energy|Coal</code></td>
 <td style="text-align: left;">This criterion flags scenarios that report coal primary energy production that is inconsistent with historical values.<br><br>This is a concern because the underlying modelling likely makes false assumptions on the mitigation effort required to reach net-zero emissions.</td>
 <td style="text-align: left;">Historical values are provided by the International Energy Agency <a href="../sources/#IEA-ESDB-20250610">(IEA, 2025)</a>, where we assume that Primary Energy variables are given by the "total energy supply" reported by the IEA.<br><br>Based on this historical data, we assume the following global threshold for years 2010, 2015, 2020 and 2025:<br>• Lower and upper threshold, failed vetting:  ±20% deviation.<br><br>Note that these ranges not only give models some leeway to deviate, but also account for uncertainty in the underlying data sources.<br><br>The threshold for 2025 is derived using the 2023 value and the 2021–2023 growth rate.<br><br>To account for the COVID-19 shock, the threshold for 2020 is derived using both the reported value in 2020 and the value averaged over the period Jan 2018 until Dec 2022, taking whichever is more permissive for the scenario in question.</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>Historical Vetting|Primary Energy|Gas</code></td>
 <td style="text-align: left;">This criterion flags scenarios that report gas primary energy production that is inconsistent with historical values.<br><br>This is a concern because the underlying modelling likely makes false assumptions on the mitigation effort required to reach net-zero emissions.</td>
 <td style="text-align: left;">Historical values are provided by the International Energy Agency <a href="../sources/#IEA-ESDB-20250610">(IEA, 2025)</a>, where we assume that Primary Energy variables are given by the "total energy supply" reported by the IEA.<br><br>Based on this historical data, we assume the following global threshold for years 2010, 2015, 2020 and 2025:<br>• Lower and upper threshold, failed vetting:  ±20% deviation.<br><br>Note that these ranges not only give models some leeway to deviate, but also account for uncertainty in the underlying data sources.<br><br>The threshold for 2025 is derived using the 2023 value and the 2021–2023 growth rate.<br><br>To account for the COVID-19 shock, the threshold for 2020 is derived using both the reported value in 2020 and the value averaged over the period Jan 2018 until Dec 2022, taking whichever is more permissive for the scenario in question.</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>Historical Vetting|Primary Energy|Oil</code></td>
 <td style="text-align: left;">This criterion flags scenarios that report oil primary energy production that is inconsistent with historical values.<br><br>This is a concern because the underlying modelling likely makes false assumptions on the mitigation effort required to reach net-zero emissions.</td>
 <td style="text-align: left;">Historical values are provided by the International Energy Agency <a href="../sources/#IEA-ESDB-20250610">(IEA, 2025)</a>, where we assume that Primary Energy variables are given by the "total energy supply" reported by the IEA.<br><br>Based on this historical data, we assume the following global threshold for years 2010, 2015, 2020 and 2025:<br>• Lower and upper threshold, failed vetting:  ±20% deviation.<br><br>Note that these ranges not only give models some leeway to deviate, but also account for uncertainty in the underlying data sources.<br><br>The threshold for 2025 is derived using the 2023 value and the 2021–2023 growth rate.<br><br>To account for the COVID-19 shock, the threshold for 2020 is derived using both the reported value in 2020 and the value averaged over the period Jan 2018 until Dec 2022, taking whichever is more permissive for the scenario in question.</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>Historical Vetting|Primary Energy|Nuclear</code></td>
 <td style="text-align: left;">This criterion flags scenarios that report nuclear primary energy production that is inconsistent with historical values.<br><br>This is a concern because the underlying modelling likely makes false assumptions on the mitigation effort required to reach net-zero emissions.</td>
 <td style="text-align: left;">Historical values are provided by the International Energy Agency <a href="../sources/#IEA-ESDB-20250610">(IEA, 2025)</a>, where we assume that Primary Energy variables are given by the "total energy supply" reported by the IEA.<br><br>Based on this historical data, we assume the following global threshold for years 2010, 2015, 2020 and 2025:<br>• Lower and upper threshold, failed vetting:  ±20% deviation.<br><br>Note that these ranges not only give models some leeway to deviate, but also account for uncertainty in the underlying data sources.<br><br>The threshold for 2025 is derived using the 2023 value and the 2021–2023 growth rate.<br><br>To account for the COVID-19 shock, the threshold for 2020 is derived using both the reported value in 2020 and the value averaged over the period Jan 2018 until Dec 2022, taking whichever is more permissive for the scenario in question.</td>
+<td style="text-align: left;">The value for <code>Primary Energy|Nuclear</code> is taken from the statistics of "Electricity generation by source, World, 1990-2023" of the IEA Energy Statistics Data Browser (<a href="https://www.iea.org/data-and-statistics/data-tools/energy-statistics-data-browser?country=WORLD&amp;fuel=Energy%20supply&amp;indicator=ElecGenByFuel">here</a>) and then converted from GWh to EJ (assuming 1 GWh = 3.6e-06 EJ).</td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>Historical Vetting|Final Energy</code></td>
 <td style="text-align: left;">This criterion flags scenarios that report final energy demand that is inconsistent with historical values.<br><br>This is a concern because the underlying modelling likely makes false assumptions on the mitigation effort required to reach net-zero emissions.</td>
 <td style="text-align: left;">Historical values are provided by the International Energy Agency <a href="../sources/#IEA-ESDB-20250610">(IEA, 2025)</a>, where we assume that the Final Energy variable is given by the "total final consumption" reported by the IEA.<br><br>Note that final energy includes non-energy use.<br><br>Based on this historical data, we assume the following global threshold for years 2010, 2015, 2020 and 2025:<br>• Lower and upper threshold, failed vetting:  ±20% deviation.<br><br>Note that these ranges not only give models some leeway to deviate, but also account for uncertainty in the underlying data sources.<br><br>The threshold for 2025 is derived using the 2023 value and the 2021–2023 growth rate.<br><br>To account for the COVID-19 shock, the threshold for 2020 is derived using both the reported value in 2020 and the value averaged over the period Jan 2018 until Dec 2022, taking whichever is more permissive for the scenario in question.</td>
+<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
@@ -1268,12 +1275,14 @@ necessary/relevant and how its threshold values were chosen.</p>
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.tabs.link", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "navigation.indexes", "navigation.expand", "toc.integrate"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.tabs.link", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "navigation.indexes", "navigation.expand", "toc.integrate"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"alias": true, "provider": "mike"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
         <script src="../../assets/_markdown_exec_pyodide.js"></script>
+      
+        <script src="../../assets/js/version-selector.js"></script>
       
     
   </body>

@@ -3,5 +3,12 @@
     "version": "latest",
     "title": "latest",
     "aliases": []
+  },
+  {
+    "version": "2026.07.31",
+    "title": "2026.07.31",
+    "aliases": [
+      "stable"
+    ]
   }
 ]

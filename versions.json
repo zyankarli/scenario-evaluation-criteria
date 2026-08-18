@@ -10,5 +10,10 @@
     "aliases": [
       "stable"
     ]
+  },
+  {
+    "version": "2026-update",
+    "title": "2026-update",
+    "aliases": []
   }
 ]

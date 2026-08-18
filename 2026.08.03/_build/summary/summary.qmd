@@ -1,0 +1,625 @@
+---
+title: "Validation Criteria: Summary"
+subtitle: "Definitions of validation criteria for integrated assessment modelling scenarios"
+format:
+  pdf:
+    pdf-engine: xelatex
+    toc: true
+    number-sections: false
+    documentclass: article
+    fontsize: 9pt
+    geometry: margin=1.8cm
+---
+
+This page gives a criterion-by-criterion overview of all validation criteria,
+combining the scientific justifications with the computed threshold values.
+
+## Historical Vetting
+
+Historical vetting criteria check for the alignment of scenarios with historical data. Scenarios are marked as inconsistent if they do not match reported historical real-world estimates for time periods in the past. Misalignment of a scenario means that the scenario is or has become impossible, which can often be the outcome of outdatedness of older scenarios.
+
+**Possible validation outcomes:**
+
+* `ok` — Consistent with historical data
+* `failed` — Inconsistent with historical data
+* `insufficient reporting` — Variable not reported
+
+### Emissions|CO2|Energy and Industrial Processes
+
+**Why this criterion?** This scenario reports CO2 emissions in the energy supply, energy demand, and industry sectors that are inconsistent with historical values. This  is a concern because the underlying modelling likely makes false  assumptions on the remaining GHG emissions budget and the mitigation  effort required to reach net-zero emissions.
+
+**Why this threshold?** Historical values are provided by the Community Emissions Data System  <a href="#CEDS-2025">(Hoesly, 2025)</a>.
+
+
+
+The thresholds are derived from these sources for years 2010, 2015, 2020, and 2025 as follows:
+
+• Whole world: ±20% deviation.
+
+
+
+Note that these ranges not only give models some leeway to deviate, but  also account for uncertainty in the underlying data sources. To further  account for uncertainty in the historical values, the most permissible  source of all sources for each variable, region, and period is used to  set the threshold.
+
+
+
+The threshold for 2025 is derived from data in 2022 and 2023 through linear extrapolation. To account for the COVID-19 shock, the threshold for 2020 is derived using both the reported value in 2020 and the value averaged over the period Jan 2018 until Dec 2022, taking whichever is more permissive for the scenario in question.
+
+```{=latex}
+\scriptsize
+```
+
+| Variable                                        |   Year | Unit      | Validation outcome   |   Lower (abs) | Lower (rel)   |   Lower (ref) |   Upper (abs) | Upper (rel)   |   Upper (ref) | Reference data                                              |
+|:------------------------------------------------|-------:|:----------|:---------------------|--------------:|:--------------|--------------:|--------------:|:--------------|--------------:|:------------------------------------------------------------|
+| Emissions\|CO2\|Energy and Industrial Processes |   2010 | Mt CO2/yr | failed               |         26768 | -20%          |         33460 |         40152 | +20%          |         33460 | CEDS-2025                                                   |
+| Emissions\|CO2\|Energy and Industrial Processes |   2015 | Mt CO2/yr | failed               |         28502 | -20%          |         35627 |         42753 | +20%          |         35627 | CEDS-2025                                                   |
+| Emissions\|CO2\|Energy and Industrial Processes |   2020 | Mt CO2/yr | failed               |         28310 | -20%          |         35387 |         44249 | +20%          |         36874 | Most permissive value of: CEDS-2025,CEDS-2025-COVIDaveraged |
+| Emissions\|CO2\|Energy and Industrial Processes |   2025 | Mt CO2/yr | failed               |         31507 | -20%          |         39383 |         47260 | +20%          |         39383 | CEDS-2025-extrapol25                                        |
+
+```{=latex}
+\normalsize
+```
+
+### Final Energy
+
+**Why this criterion?** This scenario reports final energy demand that is inconsistent with historical values. This is a concern because the underlying modelling likely makes false assumptions on the mitigation effort required to reach net-zero emissions.
+
+Note that final energy includes non-energy use.
+
+**Why this threshold?** Historical values are provided by the International Energy Agency <a href="#IEA-ESDB-20250610">(IEA, 2025)</a>, where we assume that Primary Energy variables are given by the "total energy supply" reported by the IEA.
+
+
+
+The thresholds are derived from these sources for years 2010, 2015, 2020, and 2025 as follows:
+
+• Whole world: ±20% deviation.
+
+
+
+Note that these ranges not only give models some leeway to deviate, but also account for uncertainty in the underlying data sources. To further account for uncertainty in the historical values, the most permissible source of all sources for each variable, region, and period is used to set the threshold.
+
+
+
+The threshold for 2025 is derived from data in 2022 and 2023 through linear extrapolation. To account for the COVID-19 shock, the threshold for 2020 is derived using both the reported value in 2020 and the value averaged over the period Jan 2018 until Dec 2022, taking whichever is more permissive for the scenario in question.
+
+```{=latex}
+\scriptsize
+```
+
+| Variable     |   Year | Unit   | Validation outcome   |   Lower (abs) | Lower (rel)   |   Lower (ref) |   Upper (abs) | Upper (rel)   |   Upper (ref) | Reference data                                                              |
+|:-------------|-------:|:-------|:---------------------|--------------:|:--------------|--------------:|--------------:|:--------------|--------------:|:----------------------------------------------------------------------------|
+| Final Energy |   2010 | EJ/yr  | failed               |           292 | -20%          |           365 |           438 | +20%          |           365 | IEA-ESDB-20250610                                                           |
+| Final Energy |   2015 | EJ/yr  | failed               |           312 | -20%          |           390 |           467 | +20%          |           390 | IEA-ESDB-20250610                                                           |
+| Final Energy |   2020 | EJ/yr  | failed               |           317 | -20%          |           396 |           494 | +20%          |           412 | Most permissive value of: IEA-ESDB-20250610,IEA-ESDB-20250610-COVIDaveraged |
+| Final Energy |   2025 | EJ/yr  | failed               |           354 | -20%          |           443 |           531 | +20%          |           443 | IEA-ESDB-20250610-extrapol25                                                |
+
+```{=latex}
+\normalsize
+```
+
+### Primary Energy|Coal
+
+**Why this criterion?** This scenario reports coal primary energy production that is inconsistent with historical values. This is a concern because the underlying modelling likely makes false assumptions on the mitigation effort required to reach net-zero emissions.
+
+**Why this threshold?** Historical values are provided by the International Energy Agency <a href="#IEA-ESDB-20250610">(IEA, 2025)</a>, where we assume that Primary Energy variables are given by the "total energy supply" reported by the IEA.
+
+
+
+The thresholds are derived from these sources for years 2010, 2015, 2020, and 2025 as follows:
+
+• Whole world: ±20% deviation.
+
+
+
+Note that these ranges not only give models some leeway to deviate, but also account for uncertainty in the underlying data sources. To further account for uncertainty in the historical values, the most permissible source of all sources for each variable, region, and period is used to set the threshold.
+
+
+
+The threshold for 2025 is derived from data in 2022 and 2023 through linear extrapolation. To account for the COVID-19 shock, the threshold for 2020 is derived using both the reported value in 2020 and the value averaged over the period Jan 2018 until Dec 2022, taking whichever is more permissive for the scenario in question.
+
+```{=latex}
+\scriptsize
+```
+
+| Variable             |   Year | Unit   | Validation outcome   |   Lower (abs) | Lower (rel)   |   Lower (ref) |   Upper (abs) | Upper (rel)   |   Upper (ref) | Reference data                                                              |
+|:---------------------|-------:|:-------|:---------------------|--------------:|:--------------|--------------:|--------------:|:--------------|--------------:|:----------------------------------------------------------------------------|
+| Primary Energy\|Coal |   2010 | EJ/yr  | failed               |           122 | -20%          |           153 |           183 | +20%          |           153 | IEA-ESDB-20250610                                                           |
+| Primary Energy\|Coal |   2015 | EJ/yr  | failed               |           129 | -20%          |           161 |           193 | +20%          |           161 | IEA-ESDB-20250610                                                           |
+| Primary Energy\|Coal |   2020 | EJ/yr  | failed               |           126 | -20%          |           158 |           197 | +20%          |           165 | Most permissive value of: IEA-ESDB-20250610,IEA-ESDB-20250610-COVIDaveraged |
+| Primary Energy\|Coal |   2025 | EJ/yr  | failed               |           146 | -20%          |           183 |           219 | +20%          |           183 | IEA-ESDB-20250610-extrapol25                                                |
+
+```{=latex}
+\normalsize
+```
+
+### Primary Energy|Gas
+
+**Why this criterion?** This scenario reports gas primary energy production that is inconsistent with historical values. This is a concern because the underlying modelling likely makes false assumptions on the mitigation effort required to reach net-zero emissions.
+
+**Why this threshold?** Historical values are provided by the International Energy Agency <a href="#IEA-ESDB-20250610">(IEA, 2025)</a>, where we assume that Primary Energy variables are given by the "total energy supply" reported by the IEA.
+
+
+
+The thresholds are derived from these sources for years 2010, 2015, 2020, and 2025 as follows:
+
+• Whole world: ±20% deviation.
+
+
+
+Note that these ranges not only give models some leeway to deviate, but also account for uncertainty in the underlying data sources. To further account for uncertainty in the historical values, the most permissible source of all sources for each variable, region, and period is used to set the threshold.
+
+
+
+The threshold for 2025 is derived from data in 2022 and 2023 through linear extrapolation. To account for the COVID-19 shock, the threshold for 2020 is derived using both the reported value in 2020 and the value averaged over the period Jan 2018 until Dec 2022, taking whichever is more permissive for the scenario in question.
+
+```{=latex}
+\scriptsize
+```
+
+| Variable            |   Year | Unit   | Validation outcome   |   Lower (abs) | Lower (rel)   |   Lower (ref) |   Upper (abs) | Upper (rel)   |   Upper (ref) | Reference data                                                              |
+|:--------------------|-------:|:-------|:---------------------|--------------:|:--------------|--------------:|--------------:|:--------------|--------------:|:----------------------------------------------------------------------------|
+| Primary Energy\|Gas |   2010 | EJ/yr  | failed               |          91.7 | -20%          |           115 |           137 | +20%          |           115 | IEA-ESDB-20250610                                                           |
+| Primary Energy\|Gas |   2015 | EJ/yr  | failed               |          97.9 | -20%          |           122 |           147 | +20%          |           122 | IEA-ESDB-20250610                                                           |
+| Primary Energy\|Gas |   2020 | EJ/yr  | failed               |         110   | -20%          |           138 |           169 | +20%          |           141 | Most permissive value of: IEA-ESDB-20250610,IEA-ESDB-20250610-COVIDaveraged |
+| Primary Energy\|Gas |   2025 | EJ/yr  | failed               |         114   | -20%          |           142 |           171 | +20%          |           142 | IEA-ESDB-20250610-extrapol25                                                |
+
+```{=latex}
+\normalsize
+```
+
+### Primary Energy|Nuclear
+
+**Why this criterion?** This scenario reports nuclear primary energy production that is inconsistent with historical values. This is a concern because the underlying modelling likely makes false assumptions on the mitigation effort required to reach net-zero emissions.
+
+**Why this threshold?** Historical values are provided by the International Energy Agency <a href="#IEA-ESDB-20250610">(IEA, 2025)</a>, where we assume that Primary Energy variables are given by the "total energy supply" reported by the IEA.
+
+
+
+The thresholds are derived from these sources for years 2010, 2015, 2020, and 2025 as follows:
+
+• Whole world: ±20% deviation.
+
+
+
+Note that these ranges not only give models some leeway to deviate, but also account for uncertainty in the underlying data sources. To further account for uncertainty in the historical values, the most permissible source of all sources for each variable, region, and period is used to set the threshold.
+
+
+
+The threshold for 2025 is derived from data in 2022 and 2023 through linear extrapolation. To account for the COVID-19 shock, the threshold for 2020 is derived using both the reported value in 2020 and the value averaged over the period Jan 2018 until Dec 2022, taking whichever is more permissive for the scenario in question.
+
+```{=latex}
+\scriptsize
+```
+
+| Variable                |   Year | Unit   | Validation outcome   |   Lower (abs) | Lower (rel)   |   Lower (ref) |   Upper (abs) | Upper (rel)   |   Upper (ref) | Reference data                                                              |
+|:------------------------|-------:|:-------|:---------------------|--------------:|:--------------|--------------:|--------------:|:--------------|--------------:|:----------------------------------------------------------------------------|
+| Primary Energy\|Nuclear |   2010 | EJ/yr  | failed               |          7.94 | -20%          |          9.92 |          11.9 | +20%          |          9.92 | IEA-ESDB-20250610                                                           |
+| Primary Energy\|Nuclear |   2015 | EJ/yr  | failed               |          7.4  | -20%          |          9.25 |          11.1 | +20%          |          9.25 | IEA-ESDB-20250610                                                           |
+| Primary Energy\|Nuclear |   2020 | EJ/yr  | failed               |          7.71 | -20%          |          9.64 |          11.8 | +20%          |          9.84 | Most permissive value of: IEA-ESDB-20250610,IEA-ESDB-20250610-COVIDaveraged |
+| Primary Energy\|Nuclear |   2025 | EJ/yr  | failed               |          7.68 | -20%          |          9.6  |          11.5 | +20%          |          9.6  | IEA-ESDB-20250610-extrapol25                                                |
+
+```{=latex}
+\normalsize
+```
+
+### Primary Energy|Oil
+
+**Why this criterion?** This scenario reports oil primary energy production that is inconsistent with historical values. This is a concern because the underlying modelling likely makes false assumptions on the mitigation effort required to reach net-zero emissions.
+
+**Why this threshold?** Historical values are provided by the International Energy Agency <a href="#IEA-ESDB-20250610">(IEA, 2025)</a>, where we assume that Primary Energy variables are given by the "total energy supply" reported by the IEA.
+
+
+
+The thresholds are derived from these sources for years 2010, 2015, 2020, and 2025 as follows:
+
+• Whole world: ±20% deviation.
+
+
+
+Note that these ranges not only give models some leeway to deviate, but also account for uncertainty in the underlying data sources. To further account for uncertainty in the historical values, the most permissible source of all sources for each variable, region, and period is used to set the threshold.
+
+
+
+The threshold for 2025 is derived from data in 2022 and 2023 through linear extrapolation. To account for the COVID-19 shock, the threshold for 2020 is derived using both the reported value in 2020 and the value averaged over the period Jan 2018 until Dec 2022, taking whichever is more permissive for the scenario in question.
+
+```{=latex}
+\scriptsize
+```
+
+| Variable            |   Year | Unit   | Validation outcome   |   Lower (abs) | Lower (rel)   |   Lower (ref) |   Upper (abs) | Upper (rel)   |   Upper (ref) | Reference data                                                              |
+|:--------------------|-------:|:-------|:---------------------|--------------:|:--------------|--------------:|--------------:|:--------------|--------------:|:----------------------------------------------------------------------------|
+| Primary Energy\|Oil |   2010 | EJ/yr  | failed               |           140 | -20%          |           175 |           210 | +20%          |           175 | IEA-ESDB-20250610                                                           |
+| Primary Energy\|Oil |   2015 | EJ/yr  | failed               |           149 | -20%          |           187 |           224 | +20%          |           187 | IEA-ESDB-20250610                                                           |
+| Primary Energy\|Oil |   2020 | EJ/yr  | failed               |           142 | -20%          |           178 |           226 | +20%          |           188 | Most permissive value of: IEA-ESDB-20250610,IEA-ESDB-20250610-COVIDaveraged |
+| Primary Energy\|Oil |   2025 | EJ/yr  | failed               |           160 | -20%          |           200 |           240 | +20%          |           200 | IEA-ESDB-20250610-extrapol25                                                |
+
+```{=latex}
+\normalsize
+```
+
+## Feasibility Concern
+
+Feasibility criteria check for the alignment of scenarios with near-term trends and long-term developments across sectors. In the near future (i.e. next 5 years), scenarios are flagged if they substantially deviate from project announcements and market outlooks. In particular, installment rates are unlikely to exceed announced projects for technologies with long lead times (e.g. hydropower, nuclear power or carbon capture and storage). Moreover, near-term market forecasts for technologies with established markets (e.g. solar PV or wind) provide corridors of installment rates that are unlikely to be subceeded or exceeded. In the longer future (i.e. 2035 and beyond), scenarios are flagged if they report technology growth rates that are inconsistent with general growth expectations. While going above or below these near-term and long-term thresholds is not strictly impossible, those developments would require unconventional implementation and growth rates.
+
+**Possible validation outcomes:**
+
+* `ok` — No feasibility concerns
+* `medium` — Moderate feasibility concerns
+* `high` — Strong feasibility concerns
+* `not assigned` — Variable not reported
+
+### Carbon Capture and Storage
+
+**Why this criterion?** This scenario assumes a deployment of CCS technologies that is inconsistent with near-term projections (2030) or long-term feasibility constraints (2035–2040).
+
+
+
+Near-term (2030): near-term upper and lower capacity projections can be derived from existing capacities and from current project announcements and known project lead times. Robust upper projections can be made because projects take at least 5 years to plan and construct and therefore will not be operational by 2030 if not yet announced by today. Robust lower projections can be made based on existing capacities and because retirement rates can reasonably be assumed to be low.
+
+
+
+Long-term (2035–2040): CCS involves capturing CO₂ from flue gases and storing it geologically. The required technologies for these activities are highly non-modular and application-specific. Additionally, CCS depends on infrastructure like CO₂ pipeline networks, which still have to be built. Therefore it will likely grow more slowly than modular technologies with some degree of existing infrastructure, such as solar, wind, and batteries.
+
+**Why this threshold?** Near-term (2030): CCS projects are tracked by the IEA and published annually in its CCUS Database. Details can be found here: https://www.iea.org/data-and-statistics/data-product/ccus-projects-database
+
+
+
+Projects in the CCUS database have one of the following statuses:
+
+• Operational: in operation in 2024
+
+• Construction: currently under construction
+
+• Planned: announced but without final investment decision in 2024. Projects that were decommissioned or suspended are not counted.
+
+
+
+We assume the following thresholds for 2030 based on data provided by the IEA CCUS database:
+
+• Lower, red:  10% less than currently operational capacities.
+
+• Lower, yellow:  5% less than currently operational capacities and 50% of projects under construction.
+
+• Upper, yellow:  5% more than plants operational today plus all projects under construction plus 20% of projects planned without FID.
+
+• Upper, red:  10% more than all projects operational, under construction, and announced.
+
+
+
+Long-term (2035–2040): this scenario assumes capacity deployment of CCS in 2035 and 2040 that would require unlikely growth rates (compare <a href="#Kazlou-2024">Kazlou (2024)</a>).
+
+```{=latex}
+\scriptsize
+```
+
+| Variable                           |   Year | Unit      | Validation outcome   |   Lower (abs) |   Upper (abs) |
+|:-----------------------------------|-------:|:----------|:---------------------|--------------:|--------------:|
+| Carbon Capture\|Geological Storage |   2030 | Mt CO2/yr | high                 |             0 |           458 |
+| Carbon Capture\|Geological Storage |   2030 | Mt CO2/yr | medium               |            44 |           152 |
+| Carbon Capture\|Geological Storage |   2035 | Mt CO2/yr | medium               |           nan |          1300 |
+| Carbon Capture\|Geological Storage |   2040 | Mt CO2/yr | medium               |           nan |          4300 |
+
+```{=latex}
+\normalsize
+```
+
+### Hydropower Capacity
+
+**Why this criterion?** This scenario assumes a deployment of hydropower plants that is inconsistent with near-term projections.
+
+
+
+Near-term upper and lower capacity projections can be derived from existing capacities and from current project announcements and known project lead times. Robust upper projections can be made because projects take at least 5 years to plan and construct and therefore will not be operational by 2030 if not yet announced by today. Robust lower projections can be made based on exisiting capacities and because retirement rates can reasonably be assumed to be low.
+
+
+
+Specifically, hydropower plants take 4–7 years to construct (for medium-sized projects) and up to 15 years (for large-sized projects) to plan and construct. Small projects that can be completed within less than 4 years make up less than 3% of all projects planned globally in 2021.
+
+
+
+For details on hydropower projects, see the Hydropower Special Market Report <a href="#IEA-Hydropow-2021">(IEA, 2021)</a>.
+
+**Why this threshold?** Data on hydro power plant projects was published by the IEA in 2021.  Details can be found here: https://www.iea.org/data-and-statistics/data-tools/hydropower-data-explorer
+
+
+
+The IEA publishes capacities in three categories:
+
+• Operational: in operation in 2021
+
+• Expected: expected to come online by 2030
+
+• Accelerated: capacity that could come online by 2030 given an acceleration in efforts.
+
+
+
+We assume the following thresholds for 2030 based on data provided by  the IEA:
+
+• Lower, red:  10% less than currently operational capacities.
+
+• Lower, yellow: 5% less than what is expected to come online according to the IEA by 2030.
+
+• Upper, yellow: 5% more than what is expected to come online assuming accelerated efforts according to the IEA by 2030.
+
+• Upper, red: 45% more than what is expected to come online assuming accelerated efforts according to the IEA by 2030.
+
+```{=latex}
+\scriptsize
+```
+
+| Variable                     |   Year | Unit   | Validation outcome   |   Lower (abs) |   Upper (abs) |
+|:-----------------------------|-------:|:-------|:---------------------|--------------:|--------------:|
+| Capacity\|Electricity\|Hydro |   2030 | GW     | high                 |           979 |          2118 |
+| Capacity\|Electricity\|Hydro |   2030 | GW     | medium               |          1175 |          1607 |
+
+```{=latex}
+\normalsize
+```
+
+### Nuclear Capacity
+
+**Why this criterion?** This scenario assumes a deployment of nuclear power plants that is inconsistent with near-term projections.
+
+
+
+Near-term upper and lower capacity projections can be derived from existing capacities and from current project announcements and known project lead times. Robust upper projections can be made because projects take at least 5 years to plan and construct and therefore will not be operational by 2030 if not yet announced by today. Robust lower projections can be made based on exisiting capacities and because retirement rates can reasonably be assumed to be low.
+
+**Why this threshold?** Data on nuclear power plants is published by the International Atomic Energy Agency and, including plant-level data <a href="#IAEA-PRIS-2024">(IAEA, 2024b)</a> and estimates until 2050 <a href="#IAEA-E50-2024">(IAEA, 2024a)</a>.
+
+
+
+The IAEA publishes capacities in three categories:
+
+• Operational: in operation in 2024
+
+• Construction: currently under construction
+
+• Retired: inactive capacity that has been retired
+
+
+
+We assume the following thresholds for 2030 based on the plant-level data:
+
+• Lower, red:  0.0 GW to account for the fact that nuclear energy could, in principle, be phased out quickly, as observed in a few countries (e.g. Germany).
+
+• Lower, yellow:  15% less than currently operational capacities <a href="#IAEA-PRIS-2024">(IAEA, 2024b)</a>.
+
+• Upper, yellow:  5% more than plants operational today plus bringing retired plants in Japan back online plus 75% of plants under construction <a href="#IAEA-PRIS-2024">(IAEA, 2024b)</a>.
+
+• Upper, red:  10% more than the highest estimate (461 GW) published by the <a href="#IAEA-E50-2024">IAEA (2024a)</a>.
+
+```{=latex}
+\scriptsize
+```
+
+| Variable                       |   Year | Unit   | Validation outcome   |   Lower (abs) |   Upper (abs) |
+|:-------------------------------|-------:|:-------|:---------------------|--------------:|--------------:|
+| Capacity\|Electricity\|Nuclear |   2030 | GW     | high                 |             0 |           507 |
+| Capacity\|Electricity\|Nuclear |   2030 | GW     | medium               |           320 |           442 |
+
+```{=latex}
+\normalsize
+```
+
+### Onshore Wind Capacity
+
+**Why this criterion?** This scenario assumes a deployment of on-shore wind that is inconsistent with near-term market outlooks.
+
+
+
+This technology is available at scale and has short project lead times, meaning that there are no fundamental obstacles to fast deployment. Yet, its near-term growth can be estimated based on today's market dynamics. While these estimates have their limitations, they can be used to set broad ranges of near-term feasibility.
+
+**Why this threshold?** Existing capacities in 2022 are reported by <a href="#Ember-2024">Ember (2024)</a>. Yearly  additions for 2023–2028 are estimated in a market outlook by the  <a href="#GWEC-2024">GWEC (2024)</a>.
+
+
+
+This outlook is based on input from regional wind associations,  government targets, tender results, announced auction plans, available  project pipeline, and input from industry experts.
+
+
+
+We assume the following thresholds for 2030:
+
+• Lower, red: 10% less than existing capacities plus 37.5% of market outlook.
+
+• Lower, yellow: 5% less than existing capacities plus 75% of market outlook.
+
+• Upper, yellow: 5% more than existing capacities plus 150% of market outlook.
+
+• Upper, red: 10% more than existing capacities plus 200% of market outlook.
+
+```{=latex}
+\scriptsize
+```
+
+| Variable                             |   Year | Unit   | Validation outcome   |   Lower (abs) |   Upper (abs) |
+|:-------------------------------------|-------:|:-------|:---------------------|--------------:|--------------:|
+| Capacity\|Electricity\|Wind\|Onshore |   2030 | GW     | high                 |          1220 |          3655 |
+| Capacity\|Electricity\|Wind\|Onshore |   2030 | GW     | medium               |          1719 |          2853 |
+
+```{=latex}
+\normalsize
+```
+
+### Solar PV Capacity
+
+**Why this criterion?** This scenario assumes a deployment of solar photovoltaics that is inconsistent with near-term market outlooks.
+
+
+
+This technology is available at scale and has short project lead times, meaning that there are no fundamental obstacles to fast deployment. Yet, its near-term growth can be estimated based on today's market dynamics. While these estimates have their limitations, they can be used to set broad ranges of near-term feasibility.
+
+**Why this threshold?** Existing capacities in 2023 are reported by <a href="#Ember-2024">Ember (2024)</a>. Yearly  additions for 2024–2030 are estimated in a market outlook by  <a href="#BNEF-2024">BNEF (2024)</a>.
+
+
+
+We assume the following thresholds for 2030:
+
+• Lower, red: 10% less than existing capacities plus 37.5% of market outlook.
+
+• Lower, yellow: 5% less than existing capacities plus 75% of market outlook.
+
+• Upper, yellow: 5% more than existing capacities plus 150% of market outlook.
+
+• Upper, red: 10% more than existing capacities plus 200% of market outlook.
+
+```{=latex}
+\scriptsize
+```
+
+| Variable                     |   Year | Unit   | Validation outcome   |   Lower (abs) |   Upper (abs) |
+|:-----------------------------|-------:|:-------|:---------------------|--------------:|--------------:|
+| Capacity\|Electricity\|Solar |   2030 | GW     | high                 |          2683 |         10896 |
+| Capacity\|Electricity\|Solar |   2030 | GW     | medium               |          4350 |          8164 |
+
+```{=latex}
+\normalsize
+```
+
+::: {.callout-note}
+Due to reporting inconsistencies in legacy projects, several models reported capacity-values that were far below actual power generation from solar PV, causing an overly restrictive application of this criterion.
+
+To remedy this inconsistency, we implemented an exception in the validation workflow for **Release v1.0 and v1.1 of the SCI ensemble**: any *high* concern flag was changed to *medium* if actual power generation from solar PV was above 10.5 EJ/yr in 2030, corresponding to the lowest generation value of scenarios that meet the lower bound  of the capacity threshold.
+
+Visit [https://github.com/IAMconsortium/scenariocompass/tree/main/scripts/sci_v1.0](https://github.com/IAMconsortium/scenariocompass/tree/main/scripts/sci_v1.0) for more information.
+:::
+
+### Wind Capacity
+
+**Why this criterion?** This scenario assumes a deployment of total wind power capacity (onshore and offshore combined) that falls below near-term minimum expectations.
+
+
+
+Since available near-term projections primarily cover onshore wind, the onshore wind lower bounds are used as a conservative floor for total wind capacity. This is justified by the assumption that onshore wind deployment alone should at minimum match these thresholds, making the onshore lower bounds applicable as floor values for total wind capacity.
+
+**Why this threshold?** The lower bounds are derived from the same sources as the Onshore Wind Capacity criterion. Existing capacities in 2022 are reported by <a href="#Ember-2024">Ember (2024)</a>. Yearly additions for 2023–2028 are estimated in a market outlook by the <a href="#GWEC-2024">GWEC (2024)</a>.
+
+
+
+This outlook is based on input from regional wind associations, government targets, tender results, announced auction plans, available project pipeline, and input from industry experts.
+
+
+
+The same lower bounds as for Onshore Wind Capacity are applied to total wind capacity, reflecting the assumption that onshore wind alone provides a sufficient lower bound for total deployment:
+
+• Lower, red: 10% less than existing capacities plus 37.5% of market outlook.
+
+• Lower, yellow: 5% less than existing capacities plus 75% of market outlook.
+
+```{=latex}
+\scriptsize
+```
+
+| Variable                    |   Year | Unit   | Validation outcome   |   Lower (abs) |
+|:----------------------------|-------:|:-------|:---------------------|--------------:|
+| Capacity\|Electricity\|Wind |   2030 | GW     | high                 |          1220 |
+| Capacity\|Electricity\|Wind |   2030 | GW     | medium               |          1719 |
+
+```{=latex}
+\normalsize
+```
+
+## Sustainability Concern
+
+Sustainability criteria check for the alignment of scenarios with sustainability targets other than climate-change mitigation. Scenarios are flagged if they report the use of technologies, activities or practices at a level that goes beyond what would be sustainable in those other non-climate ecosystem targets. The thresholds for sustainability criteria are derived from literature focussing on the respective sustainability targets. Misalignment of a scenario does not mean that the scenario is impossible or infeasible, but rather that it is undesirable from a non-climate sustainability perspective.
+
+**Possible validation outcomes:**
+
+* `ok` — No sustainability concerns
+* `medium` — Moderate sustainability concerns
+* `high` — Strong sustainability concerns
+* `not assigned` — Variable not reported
+
+### Exceeding Prudent Limit For Geological Carbon Storage
+
+**Why this criterion?** Some scenarios rely strongly on the use of carbon capture and  sequestration (CCS). We use geological carbon storage volumes that  exceed prudent technical and sustainability limits as upper bounds  on cumulative CCS as quantified by Gidden et al (2025).
+
+**Why this threshold?** Estimates are provided by <a href="#Gidden-2025">Gidden (2025)</a>.
+
+
+
+• Upper threshold, major concern: exceeding cumulative CCS of  1,460 Gt CO2 until the end of the century, which was identified as the  median of the range when combining spatial risk layers.
+
+• Upper threshold, medium concern: exceeding cumulative CCS of 1,290 Gt CO2 until the end of the century, which was identified as the  lower bound of the range when combining spatial risk layers.
+
+```{=latex}
+\scriptsize
+```
+
+| Variable                           | Year                  | Unit   | Validation outcome   |   Upper (abs) |
+|:-----------------------------------|:----------------------|:-------|:---------------------|--------------:|
+| Carbon Capture\|Geological Storage | cumulative[2020-2100] | Gt CO2 | high                 |          1460 |
+| Carbon Capture\|Geological Storage | cumulative[2020-2100] | Gt CO2 | medium               |          1290 |
+
+```{=latex}
+\normalsize
+```
+
+### Food Availability
+
+**Why this criterion?** This scenario reports levels of food availability that are above or  below human nutritional needs.
+
+
+
+This is a concern, because food availability below nutritional needs  would mean hunger and because food availability above nutritional  needs would mean overconsumption.
+
+**Why this threshold?** According to the <a href="#FRA-2020">Food and Agriculture Organization of the United Nations (FAO) (2020)</a>, the Minimum Dietary Energy  Requirement is 2,100 kilo calories per person per day, which is used as  the lower threshold. Meanwhile, the highest historical level of food  availability is 4,000 kilo calories per person per day, so that the  threshold is set at 5,000 kilo calories per person per day.
+
+```{=latex}
+\scriptsize
+```
+
+| Variable                       | Year   | Unit         | Validation outcome   |   Lower (abs) |   Upper (abs) |
+|:-------------------------------|:-------|:-------------|:---------------------|--------------:|--------------:|
+| Food Availability [per capita] |        | kcal/cap/day | medium               |          2100 |          5000 |
+
+```{=latex}
+\normalsize
+```
+
+### Unsustainable Bioenergy Use
+
+**Why this criterion?** This scenario assumes a high usage of bioenergy. Specifically, we here refer to 2nd generation bioenergy crops, crop and forestry residues, municipal solid waste bioenergy and traditional biomass.
+
+
+
+Bioenergy can be a drop-in replacement to currently used fossil fuels. When grown in a sustainable fashion, their life-cycle of production and use is GHG neutral. Bio-based energy crops can be grown at low cost and with readily available technologies.
+
+
+
+Some decarbonisation scenarios therefore tend to assume a high use of bioenergy. Meanwhile, such a high use of bioenergy can result in (a) growth practices that are no longer GHG neutral in their life cycle (e.g. through deforestation to create more arable land for energy crops) or result in (b) a loss of natural habitats, which creates other sustainability concerns, for instance linked to a loss of biodiversity.
+
+**Why this threshold?** <a href="#Creutzig-2014">Creutzig (2014)</a> have derived an upper limit for sustainable  biomass use of 100–300 EJ/yr. In the 6th Assessment Report of Working  Group 3 of the Intergovernmental Panel on Climate Change (IPCC), a  value of 100 EJ/yr is defined as the threshold for the onset of  medium concern and 245 EJ/yr a threshold for the onset of high concern  <a href="#IPCC-AR6-WG3-ANX3-2022">(IPCC, 2022)</a>. Another study by <a href="#Deprez-2024">Deprez (2024)</a>  suggests that medium sustainablity risks arise at 50 EJ/yr and high  risks at 120 EJ/yr. Based on those studies the threshold for this  sustainablity concern flag is set at 100 EJ/yr.
+
+```{=latex}
+\scriptsize
+```
+
+| Variable                | Year   | Unit   | Validation outcome   |   Upper (abs) |
+|:------------------------|:-------|:-------|:---------------------|--------------:|
+| Primary Energy\|Biomass |        | EJ/yr  | high                 |           245 |
+| Primary Energy\|Biomass |        | EJ/yr  | medium               |           100 |
+
+```{=latex}
+\normalsize
+```
+
+---
+
+## Sources
+
+| Identifier                                                  | Bibliographic information                                                                                                                                                                                                                                                                                                                                                                                                                               | Links                                                                                                                                                                                             |
+|:------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <p id="Creutzig-2014">`Creutzig-2014`</p>                   | Felix Creutzig, N. H. Ravindranath, Göran Berndes, Simon Bolwig, Ryan Bright, Francesco Cherubini, Helena Chum, Esteve Corbera, Mark Delucchi, Andre Faaij, Joseph Fargione, Helmut Haberl, Garvin Heath, Oswaldo Lucon, Richard Plevin, Alexander Popp, Carmenza Robledo?Abad, Steven Rose, Pete Smith, Anders Stromman, Sangwon Suh, and Omar Masera. Bioenergy and climate change mitigation: an assessment. GCB Bioenergy, 7(5):916–944, July 2014. | [DOI](https://doi.org/10.1111/gcbb.12205), [PDF](https://onlinelibrary.wiley.com/doi/epdf/10.1111/gcbb.12205)                                                                                     |
+| <p id="Kazlou-2024">`Kazlou-2024`</p>                       | Tsimafei Kazlou, Aleh Cherp, and Jessica Jewell. Feasible deployment of carbon capture and storage and the requirements of climate targets. Nature Climate Change, 14(10):1047–1055, September 2024.                                                                                                                                                                                                                                                    | [DOI](https://doi.org/10.1038/s41558-024-02104-0), [PDF](https://www.nature.com/articles/s41558-024-02104-0.pdf)                                                                                  |
+| <p id="IPCC-AR6-WG3-ANX3-2022">`IPCC-AR6-WG3-ANX3-2022`</p> | IPCC. Annex III: Scenarios and Modelling Methods. In Climate Change 2022: Mitigation of Climate Change. Contribution of Working Group III to the Sixth Assessment Report of the Intergovernmental Panel on Climate Change. Cambridge University Press, Cambridge, UK and New York, NY, USA, 2022.                                                                                                                                                       | [DOI](https://doi.org/10.1017/9781009157926.022), [PDF](https://www.ipcc.ch/report/ar6/wg3/downloads/report/IPCC\_AR6\_WGIII\_Annex-III.pdf)                                                      |
+| <p id="Deprez-2024">`Deprez-2024`</p>                       | Alexandra Deprez, Paul Leadley, Kate Dooley, Phil Williamson, Wolfgang Cramer, Jean-Pierre Gattuso, Aleksandar Rankovic, Eliot L. Carlson, and Felix Creutzig. Sustainability limits needed for CO 2 removal. Science, 383(6682):484–486, February 2024.                                                                                                                                                                                                | [DOI](https://doi.org/10.1126/science.adj6171), [PDF](https://www.science.org/doi/reader/10.1126/science.adj6171)                                                                                 |
+| <p id="IEA-ESDB-20250610">`IEA-ESDB-20250610`</p>           | IEA. Energy Statistics Data Browser. June 2025.                                                                                                                                                                                                                                                                                                                                                                                                         | [URL](https://www.iea.org/data-and-statistics/data-product/world-energy-balances)                                                                                                                 |
+| <p id="CEDS-2025">`CEDS-2025`</p>                           | Rachel Hoesly, Steven J Smith, Hamza Ahsan, Noah Prime, Patrick O'Rourke, Monica Crippa, Zbigniew Klimont, Diego Guizzardi, Leyang Feng, Colin Harkins, BRIAN MCDONALD, and Shuxiao Wang. CEDS v_2025_03_18 Aggregate Data. March 2025.                                                                                                                                                                                                                 | [DOI](https://doi.org/10.5281/zenodo.15059443)                                                                                                                                                    |
+| <p id="IEA-Hydropow-2021">`IEA-Hydropow-2021`</p>           | IEA. Hydropower Special Market Report: Analysis and Forecast to 2030. 2021.                                                                                                                                                                                                                                                                                                                                                                             | [URL](https://www.iea.org/reports/hydropower-special-market-report), [PDF](https://iea.blob.core.windows.net/assets/4d2d4365-08c6-4171-9ea2-8549fabd1c8d/HydropowerSpecialMarketReport\_corr.pdf) |
+| <p id="IAEA-E50-2024">`IAEA-E50-2024`</p>                   | IAEA. Energy, Electricity and Nuclear Power Estimates for the Period up to 2050. Reference Data Series No. 1. International Atomic Energy Agency, Vienna, Austria, 44th edition, 2024a. ISBN 978-92-0-123424-7.                                                                                                                                                                                                                                         | [DOI](https://doi.org/10.61092/iaea.e3qb-hsrr), [PDF](https://www-pub.iaea.org/MTCD/Publications/PDF/RDS-1-44\_web.pdf)                                                                           |
+| <p id="IAEA-PRIS-2024">`IAEA-PRIS-2024`</p>                 | IAEA. Power Reactor Information System. International Atomic Energy Agency, Vienna, Austria, 2024b.                                                                                                                                                                                                                                                                                                                                                     | [URL](https://pris.iaea.org/pris/)                                                                                                                                                                |
+| <p id="Ember-2024">`Ember-2024`</p>                         | Ember. Yearly Electricity Data. 2024.                                                                                                                                                                                                                                                                                                                                                                                                                   | [URL](https://ember-energy.org/data/yearly-electricity-data)                                                                                                                                      |
+| <p id="BNEF-2024">`BNEF-2024`</p>                           | BNEF. 3Q 2024 Global PV Market Outlook. 2024.                                                                                                                                                                                                                                                                                                                                                                                                           | [URL](https://about.bnef.com/blog/3q-2024-global-pv-market-outlook)                                                                                                                               |
+| <p id="GWEC-2024">`GWEC-2024`</p>                           | GWEC. Global Wind Report 2024. 2024.                                                                                                                                                                                                                                                                                                                                                                                                                    | [URL](https://www.gwec.net/reports/globalwindreport)                                                                                                                                              |
+| <p id="FRA-2020">`FRA-2020`</p>                             | Food and Agriculture Organization of the United Nations (FAO). Global Forest Resources Assessment. 2020.                                                                                                                                                                                                                                                                                                                                                | [DOI](https://doi.org/10.4060/ca9825en), [PDF](https://openknowledge.fao.org/bitstreams/e233d727-a8c9-4f90-a05d-a34b93c8a923/download)                                                            |
+| <p id="Gidden-2025">`Gidden-2025`</p>                       | Matthew J. Gidden, Siddharth Joshi, John J. Armitage, Alina-Berenice Christ, Miranda Boettcher, Elina Brutschin, Alexandre C. Köberle, Keywan Riahi, Hans Joachim Schellnhuber, Carl-Friedrich Schleussner, and Joeri Rogelj. A prudent planetary limit for geologic carbon storage. Nature, 645(8079):124–132, September 2025.                                                                                                                         | [DOI](https://doi.org/10.1038/s41586-025-09423-y), [PDF](https://www.nature.com/articles/s41586-025-09423-y.pdf)                                                                                  |
+
